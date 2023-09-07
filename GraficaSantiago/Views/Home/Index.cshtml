@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@section Script{
+    <script>
+    function resumenVenta(){
+        fetch("Home/resumenVenta")
+        .then(response)=>{
+            return response.ok ? response.json(): Promise.reject(response);
+            
+    })
+    console.log(data);
+    .then((datajson))
+    </script>
+}
